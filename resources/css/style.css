@@ -4,7 +4,10 @@ header {
   font-weight: bold;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
+  background-color: whtie;
 }
 
 header a {
@@ -26,4 +29,102 @@ header a {
 nav span {
   display: inline-block;
   padding: 20px 10px;
+}
+
+.content {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+body {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+}
+
+h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h3 {
+  margin-bottom: 41px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.story {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 10px;
+  width: 300px;
+}
+
+.image-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+.lead-story .image-content {
+  background-image: url("../images/story_main.png");
+  width: 630px;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 40px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.stories .text-content {
+  height: 250px;
+}
+
+.fall-cancelled.image-content {
+  background-image: url("../images/story2.png");
+
+}
+
+.pop-culture.image-content {
+  background-image: url("../images/story3.png");
+}
+
+.cats.image-content {
+  background-image: url("../images/story1.png");
 }
